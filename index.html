@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <table id="calc">
+            <tr class="key-row">
+                <td colspan="3" class="key-col"><input type="text" id="result"></td>
+                <td class="key-col"><input type="button" value="C"  onClick="cleard()" class="btn"></td>
+            </tr>
+            <tr class="key-row">
+                <td class="key-col"><input type="button" value="1" onclick="num('1')" class="button"></td>
+                <td class="key-col"><input type="button" value="2" onclick="num('2')" class="button"></td>
+                <td class="key-col"><input type="button" value="3" onclick="num('3')" class="button"></td>
+                <td class="key-col"><input type="button" value="+" onclick="num('+')" class="btn"></td>
+            </tr>
+            <tr class="key-row">
+                <td class="key-col"><input type="button" value="4" onclick="num('4')" class="button"></td>
+                <td class="key-col"><input type="button" value="5" onclick="num('5')" class="button"></td>
+                <td class="key-col"><input type="button" value="6" onclick="num('6')" class="button"></td>
+                <td class="key-col"><input type="button" value="-" onclick="num('-')" class="btn"></td>
+            </tr>
+            <tr class="key-row">
+                <td class="key-col"><input type="button" value="7" onclick="num('7')" class="button"></td>
+                <td class="key-col"><input type="button" value="8" onclick="num('8')" class="button"></td>
+                <td class="key-col"><input type="button" value="9" onclick="num('9')" class="button"></td>
+                <td class="key-col"><input type="button" value="-" onclick="num('/')" class="btn"></td>
+            </tr>
+            <tr class="key-row">
+                <td class="key-col"><input type="button" value="*" onClick="num('*')" class="btn"></td>
+                <td class="key-col"><input type="button" value="0" onClick="num('0')" class="button"></td>
+                <td class="key-col"><input type="button" value="." onClick="num('.')" class="btn"></td>
+                <td class="key-col"><input type="button" value="=" onClick="solve()" class="btn"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
